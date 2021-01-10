@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+ 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">	
+</head>
+<body>
+<div class="container">
+	<div class="row col-md-6 col-md-offset-3">
+		<div class="panel panel-primary">
+			<div class="panel-heading text-center">
+				<h1>Register For a Ride</h1>
+			</div>
+			<div class="panel-body">
+				<form action="connect.html" method="GET">
+					<div class=form-group">
+						<label for="CustomerName">Customer Name</label>
+						<input type="text" class="form-control" id="CustomerName" name="CustomerName"/>
+					</div>
+					<div class="form-group">
+						<label for="CustomerMobile">Customer Mobile</label>
+						<input type="text" class="form-control" id="CustomerMobile" name="CustomerMobile"/>
+					</div>
+					<div class="form-group">
+						<label for="address">Customer Address</label>
+						<input type="text" class="form-control" id="Address" name="CustomerAddress"/>
+					</div>
+					<div class="form-group">
+						<label for="number">Aadhar Number</label>
+						<input type="text" class="form-control" id="Aadhar" name="AadhraNumber" />
+					</div>
+					<div class="form-group">
+						<label for="image">Aadhar Front Image</label>
+					<form action="upload.php"
+						method="GET"
+						enctype="multipart/form-data">
+						<input type="file"
+		   				name="Aadhar_frontpage">
+						
+						</form>
+						
+					</div>
+					<div class="form-group">
+						<label for="image">Aadhar Back Image</label>
+					<form action="upload.php"
+						method="GET"
+						enctype="multipart/form-data">
+						<input type="file"
+		   				name="AadharBackImage">
+						
+						</form>
+						
+					</div>
+					<div class="form-group">
+						<label for="image">Driving License Picture Image</label>
+					<form action="upload.php"
+						method="GET"
+						enctype="multipart/form-data">
+						<input type="file"
+		   				name="AadharBackImage">
+						
+					</form>	
+					</div>
+					<div class="form-group">
+						<label for="date">Driving license expiry date</label>
+						<input type="text" class="form-control" id="expirydate" />
+					</div>
+					<form action="connect.html">
+						<input type="submit"/>
+					</form>
+					
+			<div class="panel-footer text-right">
+				<small>&copy; mpravalika</small>
+			</div>
+		</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
